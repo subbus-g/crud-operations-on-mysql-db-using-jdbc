@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class employee 
+public class Employee 
 {
     public static void main(String[] args) throws Exception 
     {
