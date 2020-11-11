@@ -15,11 +15,12 @@ public class employee
         Statement statement = connection.createStatement();
 
         // execute SQL query
-        String query = "INSERT INTO demo.employees VALUES(6,'mini','gates','bill.gates@outlook.com')";
+        String query = "UPDATE employees SET first_name = 'John' WHERE id = 1;";
+
         statement.executeUpdate(query);
 
-        System.out.println("Insertion complete");
-        
+        System.out.println("Updation complete");
+
     }
 
 }
