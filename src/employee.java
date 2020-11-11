@@ -15,14 +15,11 @@ public class employee
         Statement statement = connection.createStatement();
 
         // execute SQL query
-        String query = "SELECT * FROM employees;";
-        ResultSet resultSet = statement.executeQuery(query);
+        String query = "INSERT INTO demo.employees VALUES(6,'mini','gates','bill.gates@outlook.com')";
+        statement.executeUpdate(query);
 
-        // process the result set
-        while (resultSet.next())
-        {
-            System.out.println(resultSet.getInt(1) + " " + resultSet.getString(2) + " " + resultSet.getString(3));
-        }
-
+        System.out.println("Insertion complete");
+        
     }
+
 }
